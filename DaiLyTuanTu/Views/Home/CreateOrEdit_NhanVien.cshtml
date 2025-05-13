@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Tạo mới hoặc sửa thông tin nhân viên";
+}
+@model DaiLyTuanTu.Models.NhanVien
+
+<div class="text-center">
+    <h1 class="display-4">Tạo mới hoặc sửa thông tin nhân viên<h1>
+</div>
+
+<form>
+    <label>Mã nhân viên</label>
+    <input class="form-control" type="text" asp-for="MaNV" readonly />
+    <label>Tên nhân viên</label>
+    <input class="form-control" type="string" placeholder='Nhập tên nhân viên' asp-for="TenNV"/>
+    <label>Địa Chỉ</label>
+    <input class="form-control" type="string" placeholder='Nhập địa chỉ' asp-for="DiaChi_NV"/>
+    <label>Số điện thoại</label>
+    <input class="form-control" type="string" placeholder='0123456789' asp-for="SDT_NV"/>
+    <label>CCCD</label>
+    <input class="form-control" type="string" placeholder='000000000000' asp-for="CCCD_NV"/>
+    <label>Mã đại lý</label>
+    <input class="form-control" type="string" placeholder='Nhập mã đại ly' asp-for="MaDL"/>
+</form>
